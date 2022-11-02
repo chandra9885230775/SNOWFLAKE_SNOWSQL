@@ -20,4 +20,4 @@ jobs:
     - name: Test installation
       run:  ~/snowflake/snowsql -v
     - name: Execute SQL against Snowflake
-      run:  ~/snowflake/snowsql -f code.sql -c $SF_DATABASE.SCHEMACHANGE.CHANGE_HISTORY --create-change-history-table;
+      run:  ~/snowflake/snowsql -f code.sql -o output_file=sample.txt;
