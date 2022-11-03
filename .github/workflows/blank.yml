@@ -21,9 +21,4 @@ jobs:
       run:  ~/snowflake/snowsql -v
     - name: Execute SQL against Snowflake
       run:  ~/snowflake/snowsql -f code.sql;
-    - uses: actions/checkout@master
-      with:
-        name: my-artifact
-        run: |
-          value=`cat output.txt`
-          echo the result is $value
+
